@@ -41,30 +41,39 @@ body{
 #hero-title{
   font-size: 3em;
   font-weight:100;
-  opacity:0.9;
+  opacity:0;
   text-align: center;
   margin-top:100px;
   letter-spacing:0.1em;
+  -webkit-animation: fadeinslide 1s forwards;
+  -webkit-animation-delay: 0.5s;
+
 }
 #hero-title-desc{
   font-size:1.5em;
-  opacity:0.8;
   text-align:center;
   margin:2em;
   letter-spacing:0.1em;
-  -webkit-transition:fadein 2s ease-in;
-  transition:fadein 2s ease-in;
+  opacity:0;
+  -webkit-animation: fadeinslide 1s forwards;
+  -webkit-animation-delay: 1.5s;
+
 }
 
-@-webkit-keyframes fadein{
-  from{opacity:0;}
-  to{opacity:1;}
+@-webkit-keyframes fadeinslide{
+ 0% {opacity:0;
+    transform:translateX(1.5%);
+  }
+  100% {
+    transform:translateX(0%);
+    opacity:1;
+  }
+  
 }
 
-@keyframes fadein{
-  from{opacity:0;}
-  to{opacity:1;}
-}
+
+
+
 
 #technical-section,#social-section,#news-section,#shop-section{
   position:relative;
