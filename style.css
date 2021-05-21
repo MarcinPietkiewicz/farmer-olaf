@@ -15,6 +15,7 @@ html::-webkit-scrollbar {
 
 body{
     font-family:'Avenir', sans-serif;
+  -webkit-font-smoothing: antialiased;
     margin: 0;
 }
 
@@ -29,7 +30,80 @@ body{
     height: 100vh;
 }
 
-#hero-title
+#hero{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100vh;
+}
+
+#hero-title{
+  font-size: 3em;
+  font-weight:100;
+  opacity:0.9;
+  text-align: center;
+  margin-top:100px;
+  letter-spacing:0.1em;
+}
+#hero-title-desc{
+  font-size:1.5em;
+  opacity:0.8;
+  text-align:center;
+  margin:2em;
+  letter-spacing:0.1em;
+  -webkit-transition:fadein 2s ease-in;
+  transition:fadein 2s ease-in;
+}
+
+@-webkit-keyframes fadein{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+@keyframes fadein{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+#technical-section,#social-section,#news-section,#shop-section{
+  position:relative;
+  margin:0px;
+  padding:0px;
+  /* margin-top:100vh; */
+  height:100vh;
+}
+
+#technical-section,#social-section,#news-section,#shop-section{ 
+  background-image:linear-gradient(45deg, #197F90, #2191A4);
+}
+
+#technical-section > h2,#social-section >h2,#news-section > h2,#shop-section > h2{ 
+ margin:0px;;
+}
+
+
+#social-section{
+  background-image:linear-gradient(45deg, #E94D38, #fa6d4d);
+
+}
+
+#news-section{
+  background-image:linear-gradient(to right, red, yellow);
+
+}
+
+#shop-section{
+  background-image:linear-gradient(45deg, #2f3738, #444b52);
+}
+
+#footer-items{
+  position:relative;
+  bottom:0px;
+}
+
+
+
 
 
 /* ************************** */
@@ -149,10 +223,11 @@ background-image: linear-gradient(to right,#197F90, #2191A4);
 width:100%;
 margin:0px -50px;
 padding:15px 50px;
+transition: color 0.3s ease;
 }
 
 #menuToggle ul a:last-child li:hover{
-  color:rgb(252, 50, 50);
+  color:red;
 }
 
 /* *********************** */
