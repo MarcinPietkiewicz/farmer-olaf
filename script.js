@@ -1,24 +1,19 @@
-//hamburger menu animation
-let toggles = document.querySelectorAll(".c-hamburger");
+window.onload = function(){ 
+   document.getElementById("hideAll").style.display = "none"; 
 
-for (let i = toggles.length - 1; i >= 0; i--) {
-  let toggle = toggles[i];
-  toggleHandler(toggle);
-};
+let title = document.getElementById('hero-title');
+title.classList.add('transition');
 
-function toggleHandler(toggle) {
-  toggle.addEventListener("click", function(e) {
-    e.preventDefault();
-    if (this.classList.contains("is-active") === true) {
-      this.classList.remove("is-active");
-      $('.open').removeClass('oppenned');
-    } else {
-      this.classList.add("is-active");
-      $(".open").addClass('oppenned');
-    }
-  });
+let titleText = document.getElementById('hero-title-desc');
+titleText.classList.add('transitionTwo'); 
+
+  //  let animationElements = document.getElementsByClassName('tran');
+  //  for (let i=0, i<animationElements.length,i++ )
+   
+  //  animationElements.forEach(function(element){
+  //    element.classList.add('transition');
+  //    console.log(animationElements[0]);
+  //    console.log(animationElements[1]);
+  //  });
 }
-$(".sub-menu li a").click(function(event) {
-  $(".open").removeClass('oppenned');
-  $(".c-hamburger").removeClass('is-active');
-});
+

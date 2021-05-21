@@ -19,6 +19,16 @@ body{
     margin: 0;
 }
 
+#hideAll
+ {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 99;
+ }
 
 .bg1 {
     position: relative;
@@ -45,8 +55,6 @@ body{
   text-align: center;
   margin-top:100px;
   letter-spacing:0.1em;
-  -webkit-animation: fadeinslide 1s forwards;
-  -webkit-animation-delay: 0.5s;
 
 }
 #hero-title-desc{
@@ -55,9 +63,19 @@ body{
   margin:2em;
   letter-spacing:0.1em;
   opacity:0;
+  /* -webkit-animation: fadeinslide 1s forwards;
+  -webkit-animation-delay: 1.5s; */
+
+}
+
+.transition{
   -webkit-animation: fadeinslide 1s forwards;
   -webkit-animation-delay: 1.5s;
+}
 
+.transitionTwo{
+  -webkit-animation: fadeinslide 1s forwards;
+  -webkit-animation-delay: 2.5s;
 }
 
 @-webkit-keyframes fadeinslide{
