@@ -266,13 +266,11 @@ justify-content: space-around;
   width:100%;
   margin: 0px -50px;
   padding:15px 50px;
-  transition: opacity 1s;
 }
 
 #menu li:hover {
   background-image: linear-gradient(to right, #d8e15d, #a2df68);
   color:white;
-  transition: opacity1s;
 
 }
 
