@@ -26,7 +26,7 @@ body{
    right: 0px; 
    top: 0px; 
    bottom: 0px; 
-   background-color: white;
+   background-color: black;
    z-index: 99;
  }
 
@@ -133,7 +133,7 @@ justify-content: space-around;
 }
 
 #technical-section > h2,#social-section >h2,#news-section > h2,#shop-section > h2{ 
- margin:0px;;
+ margin:0px;
 }
 
 
